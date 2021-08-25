@@ -10,8 +10,14 @@ body {
   font-family: 'Roboto', sans-serif, arial;
   font-size: 1.2rem;
   line-height: 1.4;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 p {
@@ -83,6 +89,11 @@ li {
   color: #fff;
 }
 
+.flexParent {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Showcase */
 #showcase {
   background: #333 no-repeat center center/cover;
@@ -121,6 +132,7 @@ li {
   height: 100%;
 }
 
+/* about */
 #about {
   display: flex;
   justify-content: center;
@@ -128,8 +140,15 @@ li {
   height: 100vh;
 }
 
+#aboutImg {
+  /* height: auto; */
+  max-height: 50%;
+}
+
+/* Contact */
 #contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100vh;
 }

@@ -18,9 +18,17 @@
     </nav>
     <header id="showcase">
       <div class="showcase-content">
+        
         <h1 class="l-heading">Welcome To My Portfolio</h1>
-        <p class="lead">Hello! My name is Blake Noble and I am a front end developer. I have had a lot of fun making these projects. Please stay a while and explore!</p>
-        <a href="#creations" id="project-link" class="btn">Creations</a>
+          <div class="flexParent">
+            <div class="flexLeft">
+              <img src="../img/portfolioMain.jpg" alt="Blake Noble">
+            </div>
+            <div class="flexRight">
+              <p class="lead">Hello! My name is Blake Noble and I am a front end developer. I have had a lot of fun making these projects. Please stay a while and explore!</p>
+              <a href="#creations" id="project-link" class="btn">Creations</a>
+            </div>
+          </div>
       </div>
     </header>
 
@@ -42,7 +50,15 @@
     <section id="about" class="bg-light py-1">
       <div class="container">
         <h2 class="m-heading">About Blake</h2>
-        <p class="lead">Blake is a radical dude learning how to code his way through life.</p>
+        <div class="flexParent">
+          <div class="flexLeft">
+            <p class="lead">Blake is a radical dude learning how to code his way through life.</p>
+            <a href="#contact" id="project-link" class="btn">Contact Me</a>
+          </div>
+          <div class="flexRight">
+            <img src="../img/portfolioAbout.jpg" alt="Blake Noble" id="aboutImg">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -70,11 +86,9 @@
           <input type="submit" value="Submit" id="contact-submit" class="btn btn-dark">
         </form>
       </div>
-      <div>
-        <footer>
-          <p>Copyright 2021</p>
-        </footer>
-      </div>
+      <footer>
+        <p>Copyright 2021</p>
+      </footer>
     </section>
   <script src="../js/portfolio.js"></script>
 </body>
