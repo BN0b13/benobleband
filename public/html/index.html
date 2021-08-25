@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <title>Blake J Noble || Front End Developer</title>
+</head>
+<body id="home">
+    <nav id="navbar">
+        <a href="#home" id="main-title">B J N</a>
+        <ul>
+          <li><a href="#creations">Creations</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">Welcome To My Portfolio</h1>
+        <p class="lead">Hello! My name is Blake Noble and I am a front end developer. I have had a lot of fun making these projects. Please stay a while and explore!</p>
+        <a href="#creations" id="project-link" class="btn">Creations</a>
+      </div>
+    </header>
+
+    <section id="creations" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading text-primary">Creations</h2>
+        <div id="project-showcase">
+          <ul id="projet-list">
+            <li><a href="/brickbreaker">Brick Breaker</a></li>
+            <li><a href="/dogger">Dogger</a></li>
+            <li><a href="/calculator">Calculator</a></li>
+            <li><a href="/herofight">Hero Fight</a></li>
+            <li><a href="https://www.tanyaslawta.com" target="_blank">Tanya's Place</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading">About Blake</h2>
+        <p class="lead">Blake is a radical dude learning how to code his way through life.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Me</h2>
+        <p>Thank you so much for checking out my portfolio! Please feel free to contact me with this form below.</p>
+        <form action="/contact" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="number" id="phone" placeholder="Enter Phone Number" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Enter Message" rows="4" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="contact-submit" class="btn btn-dark">
+        </form>
+      </div>
+      <div>
+        <footer>
+          <p>Copyright 2021</p>
+        </footer>
+      </div>
+    </section>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>
