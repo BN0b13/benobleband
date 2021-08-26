@@ -8,6 +8,11 @@ router.get('/', (req, res) => {
   res.sendFile(homepage);
 });
 
+router.get('/thankyou', (req, res) => {
+  const thankyou = (path.join(process.cwd(), '/public/html/thankyou.html'));
+  res.sendFile(thankyou);
+});
+
 router.get('/brickbreaker', (req, res) => {
   const bb = (path.join(process.cwd(), '/public/html/bb.html'));
   res.sendFile(bb);
@@ -39,7 +44,7 @@ router.post('/contact', (req, res) => {
   });
   try {
     post.save();
-    res.redirect(`/`);
+    res.redirect(`/thankyou`);
   } catch(err) {
     res.send('There was an error' + err);
   };

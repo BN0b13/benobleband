@@ -24,7 +24,7 @@ p {
   margin: 0.75rem 0;
 }
 
-li {
+li, a {
   list-style: none;
 }
 
@@ -89,7 +89,7 @@ li {
   color: #fff;
 }
 
-.flexParent {
+.flexRow {
   display: flex;
   flex-direction: row;
 }
@@ -121,6 +121,7 @@ li {
     color: #333;
 }
 
+/* Creations */
 #creations {
   height: 100vh;
 }
@@ -130,6 +131,10 @@ li {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+}
+
+.creationPic {
+  max-height: 200px;
 }
 
 /* about */
