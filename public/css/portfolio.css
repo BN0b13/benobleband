@@ -4,6 +4,19 @@
   #mainImg {
     width: 300px !important;
   }
+
+  #contact .contact-form input,
+  #contact .contact-form textarea {
+    padding: 0.2rem;
+  }
+  #contact .contact-form label {
+    margin: .25rem 0 .25rem 0;
+  }
+
+  .creationPic {
+    height: 20%;
+    width: 20%;
+  }
 }
 
 * {
@@ -19,12 +32,13 @@ body {
   text-align: center;
 }
 
-a {
-  color: white !important;
-}
-
 li, a {
   list-style: none;
+}
+
+
+.nav-link-white {
+  color: white !important;
 }
 
 .containerCreation {
@@ -100,12 +114,13 @@ li, a {
 
 #contact .contact-form label {
   display: block;
+  margin: 1rem 0 1rem 0;
 }
 
 #contact .contact-form input,
 #contact .contact-form textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: .25rem;
 }
 
 #contact-submit {
@@ -117,6 +132,6 @@ li, a {
 }
 
 /* Footer  */
-#footerText {
-  color: #fff;
+.whiteText {
+  color: #fff !important;
 }
